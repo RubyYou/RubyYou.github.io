@@ -21,10 +21,10 @@ function BetScreen(){
 		catBetBtn.betItemName = "GrumpyCat";
 		dogeBetBtn.betItemName = "Doge";
 
-		//catBetBtn.on('mousedown', this.playScreenHandler);
-		//dogeBetBtn.on('mousedown', this.playScreenHandler);
-		catBetBtn.on('onTouchStart', this.playScreenHandler);
-		dogeBetBtn.on('onTouchStart', this.playScreenHandler);
+		catBetBtn.on('mousedown', this.playScreenHandler);
+		dogeBetBtn.on('mousedown', this.playScreenHandler);
+		catBetBtn.on('onTouchEnd', this.playScreenHandler);
+		dogeBetBtn.on('onTouchEnd', this.playScreenHandler);
 
 		Utility.addChildToStage([introText, Global.grumpyCat, Global.doge, dogeBetBtn, catBetBtn]);
 	};

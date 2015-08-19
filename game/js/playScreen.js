@@ -69,7 +69,7 @@ function PlayScreen(){
 		Utility.updateLayersOrder();
 
 		speedUpBtn.interactive = true;
-		//speedUpBtn.on('mousedown', this.speedUp);
+		speedUpBtn.on('mousedown', this.speedUp);
 		speedUpBtn.on('onTouchEnd', this.speedUp);
 
 		// render the second Path
