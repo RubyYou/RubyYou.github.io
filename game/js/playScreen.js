@@ -48,7 +48,7 @@ function PlayScreen(){
 		var self = this;
 
 		bg = Utility.renderImage('assets/racingMap.jpg', 0, 10, 50, 10);
-		speedUpBtn = Utility.renderImage('assets/speedUp-Btn.png', 0, 580, 500, 3);
+		speedUpBtn = Utility.renderImage('assets/speedUp-btn.png', 0, 580, 500, 3);
 		betText = Utility.renderText(Global.betTargetName + Global.BetMoney + 'pounds', H1, 0, 200, 500, 5);
 
 		// do a copy to to place in Bottom
