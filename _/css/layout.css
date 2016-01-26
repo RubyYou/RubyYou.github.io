@@ -1,0 +1,335 @@
+/*
+* Luluvirus official site 1.0
+* Extend to Skeleton responsive template 
+*/
+/* Table of Content
+==================================================
+	#Fonts and Variables
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+/* #Fonts and Variables
+================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
+/* #Site Styles
+================================================== */
+/* line 31, ../components/sass/layout.scss */
+* {
+  color: #626262;
+  line-height: 1.8em; }
+
+/* line 35, ../components/sass/layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
+/* line 40, ../components/sass/layout.scss */
+body {
+  border-top: 4px solid #111111;
+  /*background:#f2f2f2;*/
+  padding: 3em 0; }
+
+/* line 45, ../components/sass/layout.scss */
+aside {
+  padding: 0 5px;
+  text-align: center;
+  position: fixed;
+  left:10%
+}
+
+aside p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+aside img{
+	width: 100%;
+}
+.main{
+	position: absolute;
+	left: 30%;	
+}
+
+/* line 54, ../components/sass/layout.scss */
+date {
+  font-size: 12px; }
+
+/* line 57, ../components/sass/layout.scss */
+a {
+  color: #111111;
+  text-decoration: none; }
+  /* line 60, ../components/sass/layout.scss */
+  a:hover {
+    color: #f3724b; }
+
+/* line 64, ../components/sass/layout.scss */
+i {
+  list-style: none;
+  background: #111111;
+  width: 10px;
+  height: 10px;
+  color: white;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  padding: 8px 10px 10px 8px;
+  margin: 0 3px; }
+  /* line 73, ../components/sass/layout.scss */
+  i:hover {
+    background: #f3724b;
+    cursor: pointer; }
+
+/* line 79, ../components/sass/layout.scss */
+.left {
+  text-align: left; }
+
+/* line 82, ../components/sass/layout.scss */
+.right {
+  text-align: right; }
+
+/* line 85, ../components/sass/layout.scss */
+.desktop {
+  display: block; }
+
+/* line 88, ../components/sass/layout.scss */
+.mobile {
+  display: none; }
+
+/* #Page Styles
+================================================== */
+
+.project {
+  position: relative;
+  margin-bottom: 4em;
+  width:100%;
+  min-height:293px;
+  overflow: hidden;
+}
+
+.nolink:hover .thumb_describe{
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	filter: blur(1px);
+}
+
+.nolink:hover .thumb_img{
+	-webkit-filter: blur(1px) grayscale(80%);
+	-moz-filter: blur(1px) grayscale(80%);
+	filter: blur(1px) grayscale(80%);
+}
+
+.project:hover .thumb_img{
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);	
+}
+
+.project .thumb_img {
+    width: 100%;
+    cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.project .thumb_describe {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    padding: 10px 25px;
+    min-width: 180px;
+}
+
+.project .thumb_describe h3, 
+.project .thumb_describe p, 
+.project .thumb_describe date {
+      color: white;
+}
+
+
+.notfix {
+  position: relative;
+  left:0;}
+
+.more-info{
+	display: none;
+	position: absolute;
+	top: 42%;
+	left: 25%;
+	background: rgba(0,0,0, 0.8);
+	padding: 10px 20px;
+	color: white;
+}
+
+.sideNav li {
+  padding: 10px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid #efefef; }
+
+/* line 127, ../components/sass/layout.scss */
+li.block {
+  margin: 3px 8px;
+  border-bottom: 3px solid #efefef;
+  padding-bottom: 1em; }
+  /* line 131, ../components/sass/layout.scss */
+  li.block h1, li.block h2, li.block h3 {
+    font-weight: 300; }
+  /* line 134, ../components/sass/layout.scss */
+  li.block date {
+    float: left;
+    display: inline-block;
+    margin-top: 10px; }
+  /* line 139, ../components/sass/layout.scss */
+  li.block .btn {
+    background: #f3724b;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    float: right; }
+    /* line 147, ../components/sass/layout.scss */
+    li.block .btn:hover {
+      background: #111111; }
+
+/* line 152, ../components/sass/layout.scss */
+p.archiveTitle {
+  text-transform: capitalize;
+  color: #626262;
+  font-weight: 300;
+  padding: 5px 10px;
+  float: left; }
+
+/* line 160, ../components/sass/layout.scss */
+.contentBlock {
+  border-bottom: 5px solid #efefef; }
+
+  .contentBlock h1, .contentBlock h2, .contentBlock h3 {
+    font-weight: 300; }
+
+  .contentBlock h1 {
+    color: #f3724b;
+    padding: 20px 0 10px; }
+
+  .contentBlock p {
+    color: black; }
+
+  .contentBlock code {
+    background: #efefef;
+    display: block;
+    padding: 20px; }
+
+  .contentBlock a {
+    background: #f3724b;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 20px 0; }
+
+    .contentBlock a:hover {
+      background: #f3724b; }
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (max-width: 959px) {
+  .grid li {
+    width: 100%;
+  }
+
+  .project{
+	margin-bottom: -2em;
+  }
+  
+  main{
+	  left:35%;
+  }
+
+}
+@media only screen and (min-width: 959px) and (max-width: 1100px) {
+	.project{
+		margin-left: 2em;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+aside{
+	left:5%;
+}
+aside img{
+	width: 100%;
+}
+.project .thumb_describe {
+    padding: 10px;
+    max-width: 160px;
+    top: 20px;
+}
+
+.project .thumb_describe h3 {
+    font-size: 15px; 
+}
+.more-info{
+	top: 38%;
+	left: 15%;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+aside {
+    position: relative;
+    left:0;
+}
+aside img{
+	width: auto;
+}
+.main{
+	position: relative;
+	left:0;	 
+}
+
+.nolink:hover .thumb_describe{
+	-webkit-filter: blur(0);
+	-moz-filter: blur(0);
+	filter: blur(0);
+}
+
+.project .thumb_describe {
+    top: 0;
+    position: relative;
+}
+.more-info{
+	top:25%;
+	left:5%;
+	right: 5%;
+	max-width: 90%;
+	text-align: center;
+}
+
+.project .thumb_describe h3, 
+.project .thumb_describe p, 
+.project .thumb_describe date {
+      color: #111111;
+      padding-top: 0;
+}
+
+    .project .thumb_describe img {
+      display: none; }
+
+  /* line 229, ../components/sass/layout.scss */
+  .desktop {
+    display: none; }
+
+  /* line 232, ../components/sass/layout.scss */
+  .mobile {
+    display: block; } }

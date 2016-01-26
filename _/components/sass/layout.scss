@@ -1,0 +1,204 @@
+/*
+* Luluvirus official site 1.0
+* Extend to Skeleton responsive template 
+*/
+
+/* Table of Content
+==================================================
+	#Fonts and Variables
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+
+/* #Fonts and Variables
+================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic);
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/filter";
+
+// Use primary for body Text and lines
+$grey:#626262;
+$lightgrey:#efefef;
+$black:#000;
+
+// site standard dark. > logo and icons
+$main:#111;
+$orange:#f3724b;
+
+/* #Site Styles
+================================================== */
+*{
+	color:$grey;
+	line-height:1.8em;
+}
+h1,h2,h3,h4,h5,h6{
+	color:$main;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+}
+body{
+	border-top:4px solid $main;
+	/*background:$lightgrey;*/
+	padding:3em 0;
+}
+aside{
+	padding:0 5px;
+	text-align:center;
+	position:fixed;
+	p{
+		padding:10px 0;
+		text-align:center;
+	}
+}
+date{
+	font-size:12px;
+}
+a{
+	color:$orange;
+	text-decoration:none;
+}
+i{
+	list-style: none;
+	background:$main;
+	width: 10px;
+	height: 10px;
+	color:white;
+	@include border-radius(50%, 50%);
+	padding: 8px 10px 10px 8px;
+	margin: 0 3px;
+	&:hover{
+		background:$orange;
+		cursor:pointer;
+	}
+}
+
+.left{
+	text-align:left;
+}
+.right{
+	text-align:right;
+}
+.desktop{
+	display: block;
+}
+.mobile{
+	display: none;
+}
+/* #Page Styles
+================================================== */
+
+// Index page
+.project{
+		position:relative;
+		margin-bottom: 4em;
+		&:hover{
+			@include filter(unquote("grayscale(100%)"));
+			@include transition(all 0.5s ease-in-out);
+		}
+	.thumb_img{
+		width:100%;
+		cursor:pointer;
+		@include border-radius(10px);
+	}
+	.thumb_describe{
+		position: absolute;
+		top:40px;
+		text-align: center;
+		padding: 10px 25px;
+		h3,p,date{ 
+			color:white;
+		}
+	}
+}
+
+// Blog basic
+.notfix{
+	position:relative;
+	//height:100%;
+	//overflow-y:scroll;  // to do: fix the scolling bar style
+}
+.sideNav li{
+	padding:10px 0;
+	margin:0 30px;
+	border-bottom:1px solid $lightgrey;
+}
+.block{
+	//width:49%;
+	margin:10px;
+	border-top:5px solid $lightgrey;
+	border-bottom:5px solid $lightgrey;
+	h1,h2,h3{
+		font-weight: 300;
+	}
+}
+.contentBlock{
+	border-top:5px solid $lightgrey;
+	border-bottom:5px solid $lightgrey;
+	h1,h2,h3{
+		font-weight: 300;
+	}
+	h1{
+		color:$orange;
+		padding:20px 0 10px;
+	}
+	p{
+		color:$black;
+	}
+	code{
+		background:$lightgrey;
+		display:block;
+		padding:20px;
+	}
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		.project .thumb_describe{
+			padding:10px;
+			max-width: 160px;
+			top:20px;
+			h3{
+				font-size: 15px;
+			}
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		aside{
+			position:relative;
+		}
+		.project .thumb_describe{
+			top:0;
+			position: relative;
+			h3,p,date{
+				color:$main;
+				padding-top:0;
+			}
+			img{
+				display: none;
+			}
+		}
+		.desktop{
+			display: none;
+		}
+		.mobile{
+			display: block;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}

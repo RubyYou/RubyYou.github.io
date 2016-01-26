@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>LULUVIRUS | Design + Develop</title>
+    <meta name="description" content="A front-end developer's featured project showcase site.">
+    <meta name="author" content="Ruby You">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_/css/base.css">
+    <link rel="stylesheet" href="_/css/skeleton.css">
+    <link rel="stylesheet" href="_/css/layout.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+
+<body>
+<div class="container">
+    <!-- Lefthand Navigation 
+    ================================================== -->
+    <aside class="four columns">
+        <img src="images/logo.png" alt="Luluvirus | Design + Develop"/>
+        <p>My name is Ruby You. I am a full-time front-end developer and part-time UX designer. I have multi-national experience with projects across the US, UK and Asia. I am currently work at London. Feel free to contact to me if you wish to collaborate with me.</p>
+        <div class="socialicons">
+            <a href="https://www.facebook.com/shiyu.you" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="http://uk.linkedin.com/in/rubyyou" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/RubyYou" target="_blank"><i class="fa fa-github-alt"></i></a>
+            <a href="https://dribbble.com/RubyYou" target="_blank"><i class="fa fa-dribbble"></i></a>
+            <a href="images/CV.pdf" target="_blank"><i class="fa fa-file-code-o"></i></a><a href="mailto:shih@luluvirus.co.uk"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p><a href="playground/" target="_blank"> link to my playground</a></p>
+    </aside>
+
+    <!-- Image thumb area
+    ================================================== -->
+    <main class="eleven columns main">
+        <ul>
+        <li class="row project">
+            <a href="http://www.peerindex.com/" target="_blank">
+                <img class="thumb_img desktop" src="images/thumb_peerindex.jpg" alt="Peerindex SaaS front-end development">
+                <img class="thumb_img mobile" src="images/thumb_peerindex_mobile.jpg" alt="Peerindex SaaS front-end development">
+                <div class="thumb_describe">
+                    <img src="images/icon_responsive.png" alt="responsive for all platforms">
+                    <h3>PEERINDEX</h3>
+                    <hr/>
+                    <p>Responsive SaaS front-end</p>
+                    <date>Summer, 2013 - Spring, 2014</date>
+                </div>
+            </a>
+        </li>
+       <li class="row project">
+            <a href="http://mainnovationmanagement.co.uk/exploitingchaos/" target="_blank">
+                <img class="thumb_img desktop" src="images/thumb_maimshow.jpg" alt="MAIM degree show - Exploiting chaos">
+                <img class="thumb_img mobile" src="images/thumb_maimshow_mobile.jpg" alt="MAIM degree show - Exploiting chaos">
+                <div class="thumb_describe">
+                    <img src="images/icon_responsive.png" alt="responsive for all platforms">
+                    <h3>MAIM SHOW</h3>
+                    <hr/>
+                    <p>Branding + Responsive code</p>
+                    <date>Spring, 2014</date>
+                </div>
+            </a>
+        </li>
+ 
+        <li class="row project">
+            <a href="http://www.triptease.com/" target="_blank">
+                <img class="thumb_img desktop" src="images/thumb_triptease.jpg" alt="Triptease ipad app design">
+                <img class="thumb_img mobile" src="images/thumb_triptease_mobile.jpg" alt="Triptease ipad app design">
+                <div class="thumb_describe">
+                    <img src="images/icon_pad.png" alt="design for ipad">
+                    <h3>TRIPTEASE</h3>
+                    <hr/>
+                    <p>Design for iPad Travel App </p>
+                    <date>Summer, 2013</date>
+                </div>
+            </a>
+        </li>
+        <li class="row project">
+            <a href="http://busk.co/">
+                <img class="thumb_img desktop" src="images/thumb_busking.jpg" alt="THE BUSKING PROJECT">
+                <img class="thumb_img mobile" src="images/thumb_busking_mobile.jpg" alt="THE BUSKING PROJECT">
+                <div class="thumb_describe">
+                    <img src="images/icon_responsive.png" alt="responsive for all platforms">
+                    <h3>Busking Project</h3>
+                    <hr/>
+                    <p>Street Performance site <br/> Front-end / UX </p>
+                    <date>Winter, 2014</date>
+                   
+                </div>
+            </a>
+        </li>
+
+        <li class="row project">
+            <a href="https://www.igtgames.com/content/igaming-portal/en/home.html">
+                <img class="thumb_img desktop" src="images/thumb_opapA.jpg" alt="Opap sports betting Prototype">
+                <img class="thumb_img mobile" src="images/thumb_opapA_mobile.jpg" alt="Opap sports betting Prototype">
+                <div class="thumb_describe">
+                    <img src="images/icon_mac_pad.png" alt="responsive for all platforms">
+                    <h3>IGT Games</h3>
+                    <hr/>
+                    <p>IGT client site <br/> front end support</p>
+                    <date>Summer, 2015</date>
+                </div>
+            </a>
+        </li>
+
+        <li class="row project nolink">
+            <a href="javascript:void(0)">
+                <img class="thumb_img desktop" src="images/thumb_opapB.jpg" alt="Opap sports betting Prototype">
+                <img class="thumb_img mobile" src="images/thumb_opapB_mobile.jpg" alt="Opap sports betting Prototype">
+                <div class="thumb_describe">
+                    <img src="images/icon_mac_pad.png" alt="responsive for all platforms">
+                    <h3>OPAP</h3>
+                    <hr/>
+                    <p>Sports Betting site <br/> Responsive prototype</p>
+                    <date>Summer, 2014</date>
+                </div>
+                <h3 class="more-info">Contact for more information</h3>
+            </a>
+        </li>
+
+        <li class="row project">
+            <a href="http://www.ulaclock.com/" target="_blank">
+                <img class="thumb_img desktop" src="images/thumb_ulaclock.jpg" alt="ULAC Lock - bilinqual site, ajax product site">
+                <img class="thumb_img mobile" src="images/thumb_ulaclock_mobile.jpg" alt="ULAC Lock - bilinqual site, ajax product site">
+                <div class="thumb_describe">
+                    <img src="images/icon_mac.png" alt="design for desktop">
+                    <h3>ULACLOCK</h3>
+                    <hr/>
+                    <p>Multi-lingual + Ajax load site</p>
+                    <date>Spring, 2014</date>
+                </div>
+            </a>
+        </li>
+        <li class="row project">
+            <a href="http://harvatek-tech.com/" target="_blank">
+                <img class="thumb_img desktop" src="images/thumb_harvatek.jpg" alt="Havatek Responsive inquiry led product cart">
+                <img class="thumb_img mobile" src="images/thumb_harvatek_mobile.jpg" alt="Havatek Responsive inquiry led product cart">
+                <div class="thumb_describe">
+                    <img src="images/icon_responsive.png" alt="responsive for all platforms">
+                    <h3>HARVATEK</h3>
+                    <hr/>
+                    <p>Responsive Inquiry Cart</p>
+                    <date>Spring, 2014</date>
+                </div>
+            </a>
+        </li>
+        <li class="row project">
+            <a href="http://maynoradee.com/" target="_blank">
+                <img class="thumb_img desktop" src="images/thumb_maynoradee.jpg" alt="Maynoradee interior Branding and wordpress">
+                <img class="thumb_img mobile" src="images/thumb_maynoradee_mobile.jpg" alt="Maynoradee interior Branding and wordpress">
+                <div class="thumb_describe">
+                    <img src="images/icon_mac.png" alt="design for desktop">
+                    <h3>MAYNORADEE</h3>
+                    <hr/>
+                    <p>Branding + Wordpress</p>
+                    <date>Spring, 2013</date>
+                </div>
+            </a>
+        </li>
+        </ul>
+    </main>
+</div>
+    <!-- Javascript
+    ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="_/js/script.js"></script>
+    
+    <!-- Google analytics -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-41755653-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+
+    </body>
+</html>
