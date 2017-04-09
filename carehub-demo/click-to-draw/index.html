@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>click to draw</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    font-family: monospace;
+    font-size: 40px;
+    background: #ccc;
+    overflow: hidden;
+}
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    z-index: 10;
+    text-align: center;
+    text-shadow: 0 0 3px #fff;
+    cursor: pointer;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="go"></div>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

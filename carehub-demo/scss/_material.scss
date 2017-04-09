@@ -1,6 +1,10 @@
 
 #material{
 	@include greyBG;
+	.back{
+		color:$grey;
+		top:0;
+	}
 	.title{
 		width: calc(100% - 60px);
         padding: 10px;
@@ -41,10 +45,12 @@
 
 #material-content{
 	position:relative;
+
 	> h3, > h4{
 		text-align: center;
 		margin: 10px auto;
 	}
+
 	.button-wrap{
 		width:80%;
 		margin: 0 auto;
@@ -63,6 +69,7 @@
 		}
 	}
 }
+
 .tools{
 	position:absolute;
 	right:20px;

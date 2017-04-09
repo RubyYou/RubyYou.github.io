@@ -4,7 +4,7 @@ var careHubList = [];
 function init() {
   Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/11HXw1ECF-phG0ocIK_IzBqvWhc6UxAQt1eFaMocV7aI/pubhtml',
                    callback: function(data, tabletop) { 
-                       console.log(data);
+                       //console.log(data);
                        materialList = data.materials.elements;
                        careHubList = data["carehub-list"].elements;
                        addCareHubList(careHubList);
@@ -31,6 +31,17 @@ function addCareHubList(elements){
 	}
 
 	populateContentData();
+	toggleSignArea();
+}
+
+function toggleSignArea(){
+	$('.sign').find('a').on('click', function(){
+		$('.draw').addClass('show');
+	});
+
+	$('.draw').find('.remove').on('click', function(){
+		$('.draw').removeClass('show');
+	})
 }
 
 
@@ -43,7 +54,6 @@ function populateContentData(){
 			return id == parseInt(item.id);
 		});
 		var progressClass = getProgressClass(content[0].progress);
-		console.log(progressClass);
 		$('#content').find('.progress').find(progressClass).addClass('active');
 		$('#content').find('.title').append(content[0].title);
 		$('#content').find('.type').append(content[0].type);
