@@ -1,0 +1,24 @@
+$grey:#464646;
+$blue:#54b1bd;
+$orange: rgba(255, 145, 0, 0.84);
+$red: #ff6868;
+
+@mixin greyBG{
+	background: #e4e4e4;
+    position: absolute;
+    width: 100vw;
+}
+@mixin item{
+	padding:20px;
+    margin:20px;
+    display: block;
+    background:white;
+    position:relative;
+    box-shadow:0px 2px 1px #ccc;
+    cursor:pointer;
+}
+
+@import "basic";
+@import "normalize";
+@import "carehub";
+@import "material";

@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <a class="back" href="index.html"><i class="fa fa-remove"></i></a>
+            <h3 class="title"></h3>
+            <hr />
+            <p> 任務狀態 </p>
+            <div class="progress" >
+                <div class="icon start">
+                    <i class="fa fa-unlock-alt" ></i>
+                    <p>開始</p>
+                </div>
+                <div class="icon pause">
+                    <i class="fa fa-pause" ></i>
+                    <p>暫停</p>
+                </div>
+                <div class="icon inProgress">
+                    <i class="fa fa-spinner" ></i>
+                    <p>處理中</p>
+                </div>
+                <div class="icon resolve">
+                    <i class="fa fa-smile-o" ></i>
+                    <p>解決</p>
+                </div>
+            </div>
+            <h3 class="sub-title"> 細節 </h3>
+            <div class="details"></div>
+            <hr />
+            <div class="content-wrap">
+                <div class="content-item">
+                    <h4>工單類型 </h4>
+                    <h5 class="type"> </h5>
+                </div>
+                <div class="content-item">
+                    <h4>結束時間</h4>
+                    <h5 class="endTime"> </h5>
+                </div>
+                <div class="content-item">
+                    <h4>建立時間</h4>
+                    <h5 class="created"></h5>
+                </div>
+                <div class="content-item">
+                    <h4>建立人</h4>
+                    <h5 class="supervisor"> </h5>
+                </div>
+                <div class="content-item">
+                    <h4>指派人</h4>
+                    <h5 class="assign"> </h5>
+                </div>
+                <div class="content-item">
+                    <h4>狀態更新</h4>
+                    <h5 class="lastUpdated"> </h5>
+                </div>
+                <div class="content-item">
+                    <h4>服務地點</h4>
+                    <h4><i class="fa fa-plus-circle"></i>選擇地圖</h4>
+                    <iframe class="map" width="80%" height="200" style="border:0; margin: 0 auto; float:right;" src=""> </iframe>
+                </div>
+                <div class="content-item">
+                    <h4>時間與成本計算</h4>
+                    <h4 >時間</h4>
+                    <h5 class="totalTime"></h5>
+                    <h4>費用</h4>
+                    <h5 class="cost"></h5>
+                </div>
+            </div>
+            <div class="sign">
+                <a href="">客戶簽名</a>   
+                <a href="">簽名</a>
+
+                <textarea row="4"></textarea>
+            </div>
+            
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

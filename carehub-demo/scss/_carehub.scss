@@ -1,0 +1,190 @@
+#main{
+    @include greyBG;
+
+    .title{
+        background: white;
+        i{
+            cursor: pointer;
+            margin-right:5px;
+            &:hover{
+                color:$orange;
+            }
+        }
+    }
+    .update{
+         background: $blue;
+    }
+    
+    > h3{
+        width: calc(100% - 60px;);
+        padding: 10px;
+        margin: 20px auto 10px;
+    }
+
+    .line{
+        border-bottom:1px solid $grey;
+        width:35%;
+        height:10px;
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+    }
+
+    .item{
+
+        &::hover{
+            background:yellow;
+        }
+
+        .icon{
+            i { 
+                display: block;
+                font-size: 30px;
+                padding: 10px 0px 12px;
+                background: #c5c5c5;
+                color: white;
+                height: 27px;
+                border-radius: 50%;
+                width: 50px;
+            }
+
+            position: absolute;
+            right: 10px;
+            top: 14px;
+            text-align: center;
+            width: 50px;
+            height: 60px;
+        }
+
+        p{
+            margin-top: 7px;
+        }
+
+        .sub-item{
+            margin-top: 12px;
+
+            span{
+                margin-right: 10px;
+            }
+            i{
+                margin-right:10px;
+            }
+        }
+    }   
+}
+
+.item{
+	@include item;
+}
+.back{
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    color:$red;
+    font-size:24px;
+}
+
+#content{
+    position:relative;
+
+    .title{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    p{
+        text-align: center;   
+    }
+
+    .progress{
+        width: 80%;
+        margin: 0 auto;
+
+        .icon{
+            display: inline-block;
+            width:23%;
+            text-align: center;
+            i{
+                font-size: 25px;
+                color: white;
+                background:lighten($grey, 15%);
+                width: 35px;
+                height: 38px;
+                padding: 15px 10px 2px;
+                border-radius: 50px;
+               
+            }
+             &.active{
+                i{background: $red;}
+                p{ color:$red;}
+                     
+            }
+        }
+    }
+
+    .sub-title{
+        background: $red;
+        padding: 10px;
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        color: white;
+    }
+    .details{
+        width: 80%;
+        text-align: center;
+        margin: 10px auto 0;
+    }
+
+    .sign{
+        width: 80%;
+        margin: 10px auto;
+        a{ 
+            display: inline-block;
+            width: calc(50% - 28px);
+            padding:10px;
+            background:$red;
+            color:white;
+            text-align: center;
+            &:first-child{
+                margin-right: 10px;
+            }
+        }
+
+        textarea{
+            margin:20px auto;
+            width:100%;
+        }
+    }
+}
+
+.content-item{
+    width:47%;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0;
+    vertical-align: top;
+
+    h5, h4{
+        line-height: 1.5em;
+    }
+    h5{
+        font-size: 14px;
+        color:lighten($grey, 20%);
+    }
+    .type, .assign, .supervisor{
+        font-size: 16px;
+        color:$red;
+    }
+
+    .fa-plus-circle{
+        color:$red;
+        margin-right:5px;
+    }
+
+    input{
+		padding:6px 10px;
+    }
+}
+
